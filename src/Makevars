@@ -1,0 +1,12 @@
+OBJECTS.NuchartII = nuchart2.o RcppExports.o
+OBJECTS.NuchartII += NuchartII/Finder.o NuchartII/MemoryMapped.o
+OBJECTS = $(OBJECTS.NuchartII)
+
+# set by configure
+GSL_CFLAGS = -I/usr/include  
+GSL_LIBS   = -L/usr/lib -lgsl -lgslcblas -lm 
+
+# combine with standard arguments for R
+PKG_CPPFLAGS = $(GSL_CFLAGS) -I"../inst/include" -I. -pthread
+PKG_LIBS =  $(GSL_LIBS) -lcurl -lpthread `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"`
+CXX_STD = CXX11

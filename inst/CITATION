@@ -1,0 +1,19 @@
+citHeader("To cite NuchaRt in publications use:")
+
+citEntry(entry = "Article",
+	title 	= "NuchaRt: embedding high-level parallel computing in R for augmented Hi-C data analysis",
+	author 	= personList(as.person("Fabio Tordini"), as.person("Ivan Merelli"), as.person("Pietro Liò"), as.person("Luciano Milanesi"), as.person("Marco Aldinucci")),
+	booktitle	= "Post-Conference proceedings of the 12th Intl. meeting on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB 2015)",
+	publisher = "Springer",
+	series	= "LNCS",
+	volume	= "9874",
+	year	= 2016,
+
+
+	textVersion  =
+  	paste("Fabio Tordini, Ivan Merelli, Pietro Liò, Luciano Milanesi, Marco Aldinucci.",
+  		"NuchaRt: embedding high-level parallel computing in R for augmented Hi-C data analysis.", 
+  		"Post-Conference proceedings of the 12th Intl. meeting on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB 2015)", 
+  		"LNCS, Springer, vol. 9874, 2016.")
+
+)
