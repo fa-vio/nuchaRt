@@ -1,0 +1,13 @@
+Package: NuchaRt
+Type: Package
+Title: NuchaRt - a high-level parallel computing tool for augmented Hi-C data analysis
+Version: 0.1
+Date: 2015-05-04
+Author: Fabio Tordini, Ivan Merelli
+Maintainer: Fabio Tordini <fabio.trdn@gmail.com>
+Description: NuchaRt fosters a gene-centric, graph-based representation of genomic data resulting from next-generation, high-throughput DNA sequencing techniques. NuchaRt provides functions and tools for the analysis of such data, ensuring high-performance and good usability.
+License: GPL (>= 2)
+LazyData: TRUE
+Imports: data.table (>= 1.9.4), mallinfo, networkD3, igraph, network, biomaRt, GEOquery, ArrayExpress, ergm, Rcpp (>= 0.12.5)
+LinkingTo: Rcpp
+SystemRequirements: C++11
